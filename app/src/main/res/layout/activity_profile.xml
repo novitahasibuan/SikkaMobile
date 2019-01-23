@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f2f4"
+    tools:context="id.go.pajak.sikkamobile.activity.ProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blueDJP"
+        android:elevation="1dp">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/blueDJP">
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:elevation="3dp"
+            android:src="@drawable/taeng"
+            app:civ_border_color="#ff000000"
+            app:civ_border_width="2dp" />-->
+
+        <ImageView
+            android:id="@+id/picassoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:elevation="3dp"
+            app:srcCompat="@drawable/ic_user"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/picassoImageView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="KIM TAEYEON"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/thumbnip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:background="#fff"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvnip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIP"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/nip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Nip Baru"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/nipbaru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="1202144058"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/nipbaru"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c6924a" />
+
+                <TextView
+                    android:id="@+id/niplama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Nip Lama"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/niplam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/niplama"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="1202144058"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thumborg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumbnip"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvorg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UNIT ORGANISASI"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/kodeorganisasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvorg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Kode Unit Organisasi"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/kodeorg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kodeorganisasi"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="0413030200"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/kodeorg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c6924a" />
+
+                <TextView
+                    android:id="@+id/namaunitorganisasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Nama Unit"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/namaunitorg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaunitorganisasi"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="Seksi Pengembangan Aplikasi Informasi Geografis"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumborg"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvkantor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KANTOR"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/kodekantor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvkantor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Kode Kantor"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/kodekan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kodekantor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="4013000000"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/kodekan"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c6924a" />
+
+                <TextView
+                    android:id="@+id/kodekpp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Kode KPP"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/kppcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kodekpp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="997"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/kppcode"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c6924a" />
+
+                <TextView
+                    android:id="@+id/namakantor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Nama Kantor"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/namakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namakantor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="Direktorat Transformasi Teknologi Komunikasi dan Informasi"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JABATAN dan PANGKAT"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Jenis Jabatan"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c6924a" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Kode Jabatan"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="6010413030200"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c6924a" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Jabatan"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="Pelaksana"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c6924a" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:text="Pangkat"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number"
+                    android:text="Pengatur"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

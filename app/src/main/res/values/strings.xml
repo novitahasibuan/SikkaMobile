@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sikka Mobile</string>
+    <string name="splash_logo_desc">Splash Logo</string>
+    <string name="login_user_text">Login User</string>
+</resources>

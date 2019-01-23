@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f2f4"
+    tools:context="id.go.pajak.sikkamobile.activity.CutiActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blueDJP"
+        android:elevation="1dp">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuti"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_cuti"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="3dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blueDJP">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/cal2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center_vertical"
+                    android:text="Detail Cuti"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF6FC3C0"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/checklist3" />
+
+                <TextView
+                    android:text="Hak/Sisa Cuti Tahun 2016"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:text="100"
+                    android:textSize="18dp" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF5B829F"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/checklist3" />
+
+                <TextView
+                    android:text="Hak Cuti Tahun 2017"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+
+                    android:text="100"
+                    android:textSize="18dp" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF7D7BA2"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/checklist3" />
+
+                <TextView
+                    android:text="Cuti Bersama"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+
+                    android:text="100"
+                    android:textSize="18dp" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF67F7E"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/checklist3" />
+
+                <TextView
+                    android:text="Cuti yang telah digunakan"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+
+                    android:text="100"
+                    android:textSize="18dp" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFC1A8"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/checklist3" />
+
+                <TextView
+                    android:text="Jumlah Sisa Cuti Tahun 2017"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+
+                    android:text="100"
+                    android:textSize="18dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
